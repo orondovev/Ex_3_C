@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/oron/CLionProjects/Ex_3-C
+# Install script for directory: /mnt/c/Users/oron/Desktop/GitHub/Ex_3_C
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/mnt/c/Users/oron/CLionProjects/Ex_3-C/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/mnt/c/Users/oron/Desktop/GitHub/Ex_3_C/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
