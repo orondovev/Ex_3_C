@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/אורון דובב/Desktop/Ex_3_C"
+CMAKE_SOURCE_DIR = "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/אורון דובב/Desktop/Ex_3_C/cmake-build-debug-wsl"
+CMAKE_BINARY_DIR = "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -74,14 +74,14 @@ clean: CMakeFiles/Ex_3_C.dir/clean
 CMakeFiles/Ex_3_C.dir/all:
 	$(MAKE) -f CMakeFiles/Ex_3_C.dir/build.make CMakeFiles/Ex_3_C.dir/depend
 	$(MAKE) -f CMakeFiles/Ex_3_C.dir/build.make CMakeFiles/Ex_3_C.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/אורון דובב/Desktop/Ex_3_C/cmake-build-debug-wsl/CMakeFiles" --progress-num=1,2,3 "Built target Ex_3_C"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles" --progress-num=1,2,3 "Built target Ex_3_C"
 .PHONY : CMakeFiles/Ex_3_C.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Ex_3_C.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/אורון דובב/Desktop/Ex_3_C/cmake-build-debug-wsl/CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles" 3
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Ex_3_C.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/אורון דובב/Desktop/Ex_3_C/cmake-build-debug-wsl/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles" 0
 .PHONY : CMakeFiles/Ex_3_C.dir/rule
 
 # Convenience name for target.

@@ -1,4 +1,4 @@
-C:\WINDOWS\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/bash -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/c/Users/אורון דובב/Desktop/Ex_3_C/cmake-build-debug-wsl' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' '/mnt/c/Users/אורון דובב/Desktop/Ex_3_C'"
+C:\WINDOWS\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/bash -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd '/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl' && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' '/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C'"
 -- The C compiler identification is GNU 9.3.0
 -- Check for working C compiler: /usr/bin/cc
 -- Check for working C compiler: /usr/bin/cc -- works
@@ -8,4 +8,4 @@ C:\WINDOWS\system32\wsl.exe --distribution Ubuntu-20.04 --exec /bin/bash -c "exp
 -- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /mnt/c/Users/׳�׳•׳¨׳•׳� ׳“׳•׳‘׳‘/Desktop/Ex_3_C/cmake-build-debug-wsl
+-- Build files have been written to: /mnt/c/Users/׳�׳•׳¨׳•׳� ׳“׳•׳‘׳‘/Documents/github/Ex_3_C/cmake-build-debug-wsl

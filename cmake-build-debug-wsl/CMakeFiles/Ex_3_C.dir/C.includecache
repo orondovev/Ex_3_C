@@ -6,15 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/אורון דובב/Desktop/Ex_3_C/functions.c
+/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/functions.c
+stdio.h
+-
+string.h
+-
+functions.h
+/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/functions.h
+ctype.h
+-
+
+/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/functions.h
 stdio.h
 -
 string.h
 -
 ctype.h
 -
-functions.h
-/mnt/c/Users/אורון דובב/Desktop/Ex_3_C/functions.h
-
-/mnt/c/Users/אורון דובב/Desktop/Ex_3_C/functions.h
 

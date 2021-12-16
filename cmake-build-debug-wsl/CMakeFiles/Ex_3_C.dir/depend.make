@@ -4,5 +4,6 @@
 CMakeFiles/Ex_3_C.dir/functions.c.o: ../functions.c
 CMakeFiles/Ex_3_C.dir/functions.c.o: ../functions.h
 
+CMakeFiles/Ex_3_C.dir/main.c.o: ../functions.h
 CMakeFiles/Ex_3_C.dir/main.c.o: ../main.c
 

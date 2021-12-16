@@ -1,98 +1,51 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 #include "functions.h"
+#include <ctype.h>
 
-#define TXT 1024
-#define WORD 30
+#define TRUE 1
+#define FALSE 0
 
-int main() {//temporary main for check
-    printf("\n");
-    char letter[WORD];
-    char textss[TXT];
-    char file[TXT + WORD];
-    char c;
-    scanf("%c", &c);
-    int i = 0;
-    while (i < TXT + WORD-1) {
-        if(c == '~') {
 
-            break;
-        }
-        file[i] = c;
-        scanf("%c", &c);
-        i++;
-
+//int gValue(char);
+int gValue(char c) {
+    if (isalpha(c)) {
+        int ans = tolower(c);
+        return ans - 96;
     }
-
-//    printf("%s", file);
-
-    int index = 0;
-
-    while(file[index] != ' ' && file[index] != '\n' && file[index] != '\t') {
-        letter[index] = file[index];
-        index++;
-    }
-
-    index++;
-    int text_i = 0;
-    while (index < strlen(file)) {
-        textss[text_i++] = file[index++];
-    }
-
-    printf("FILE %s\n", file);
-    printf("TEXT %s\n", textss);
-    printf("LETTER %s\n", letter);
-
-
-
-//    int i = 0;
-//    while (i < 30) {
-//        if(c == '\t' || c == '\n' || c == ' ') {
-//            break;
-//        }
-//        letter[i] = c;
-//        scanf("%c", &c);
-//        i++;
-//    }
-//    textss[0] = c;
-//    scanf("%c", &c);
-//    textss[1] = c;
-//    printf("%c%c", textss[0], textss[1]);
-
-//    scanf("%c", &textss[0]);
-
-//    scanf("%s", textss);
-//    printf("%s", textss);
-
-//    letter[0] = c;
-
-//    scanf("%s", letter);
-//    for (int j = 0; j < strlen(letter) ; ++j) {
-//        printf("%c", letter[j]);
-//    }
-
-//    printf("\nTEST %c", textss[0]);
-
-
+    return 0;
 }
 
 
-
-
-
-
-
-
-
-//    char c;
-//    int i = 0;
-////    scanf("%s", &c);// for the first word
-//    do {
-//        scanf("%s", &c);
-//        letter[i] = c;
-//        i++;
-//    }while(letter[i] != (char)9 || letter[i] != (char)10 || letter[i] != (char)32);
-//    printf("%c", letter[i]);
-//    scanf("%s", text);
-
+void Gematria(char letter[], char text[]) {
+    char str[7000] = "Gematria Sequences: ";
+    int first_seq = FALSE;
+    int letter_g = 0;
+    for (int i = 0; i < strlen(letter); ++i) {
+        letter_g += gValue(letter[i]);
+    }
+    for (int i = 0; i < strlen(text); ++i) {
+        int g_sum = 0;
+        for (int j = i; j < strlen(text); ++j) {
+            g_sum += gValue(text[j]);
+            if (g_sum == letter_g) {
+                char temp[2024];
+                for (int k = i; k <= j; ++k) {
+                    if (first_seq) {
+                        temp[strlen(str)] = '~';
+                        str[strlen(str)] = temp[strlen(str)];
+                        temp[strlen(str)] = text[k];
+                        str[strlen(str)] = temp[strlen(str)];
+                    } else {
+                        temp[strlen(str)] = text[k];
+                        str[strlen(str)] = temp[strlen(str)];
+                    }
+                }
+                first_seq = TRUE;
+            } else if (g_sum > letter_g) {
+                break;
+            }
+        }
+    }
+    printf("KOKOKOKO %s\n", str);
+}
