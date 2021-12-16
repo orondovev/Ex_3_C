@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/אורון דובב/Desktop/Ex_3_C/functions.c
+stdio.h
+-
+string.h
+-
+ctype.h
+-
+functions.h
+/mnt/c/Users/אורון דובב/Desktop/Ex_3_C/functions.h
+
+/mnt/c/Users/אורון דובב/Desktop/Ex_3_C/functions.h
+

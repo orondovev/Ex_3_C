@@ -1,16 +1,15 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/c/Users/oron/Desktop/GitHub/Ex_3_C/functions.c" "/mnt/c/Users/oron/Desktop/GitHub/Ex_3_C/cmake-build-debug/CMakeFiles/Ex_3_C.dir/functions.c.o"
-  "/mnt/c/Users/oron/Desktop/GitHub/Ex_3_C/main.c" "/mnt/c/Users/oron/Desktop/GitHub/Ex_3_C/cmake-build-debug/CMakeFiles/Ex_3_C.dir/main.c.o"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/אורון דובב/Desktop/Ex_3_C/functions.c" "CMakeFiles/Ex_3_C.dir/functions.c.obj" "gcc" "CMakeFiles/Ex_3_C.dir/functions.c.obj.d"
+  "C:/Users/אורון דובב/Desktop/Ex_3_C/main.c" "CMakeFiles/Ex_3_C.dir/main.c.obj" "gcc" "CMakeFiles/Ex_3_C.dir/main.c.obj.d"
   )
 
 # Targets to which this target links.

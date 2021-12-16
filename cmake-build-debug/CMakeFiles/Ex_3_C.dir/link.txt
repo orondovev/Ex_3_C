@@ -1,1 +1,3 @@
-/usr/bin/cc -g   CMakeFiles/Ex_3_C.dir/main.c.o CMakeFiles/Ex_3_C.dir/functions.c.o  -o Ex_3_C 
+"C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Ex_3_C.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe qc CMakeFiles\Ex_3_C.dir/objects.a @CMakeFiles\Ex_3_C.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\Ex_3_C.dir/objects.a -Wl,--no-whole-archive -o Ex_3_C.exe -Wl,--out-implib,libEx_3_C.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Ex_3_C.dir\linklibs.rsp
