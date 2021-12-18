@@ -1,4 +1,11 @@
-C:\Windows\system32\wsl.exe --distribution Ubuntu --exec /bin/bash -c "export CLION_IDE=TRUE && export JETBRAINS_IDE=TRUE && cd /mnt/c/Users/oron/CLionProjects/Ex_3-C/cmake-build-debug && /usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G 'CodeBlocks - Unix Makefiles' /mnt/c/Users/oron/CLionProjects/Ex_3-C"
+"C:\Program Files\JetBrains\CLion 2021.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_C_COMPILER=C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc.exe" -G "CodeBlocks - MinGW Makefiles" "C:\Users\אורון דובב\Desktop\Ex_3_C"
+-- The C compiler identification is GNU 8.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /mnt/c/Users/oron/CLionProjects/Ex_3-C/cmake-build-debug
+-- Build files have been written to: C:/Users/׳�׳•׳¨׳•׳� ׳“׳•׳‘׳‘/Desktop/Ex_3_C/cmake-build-debug
+CMake File API: C:\Users\אורון דובב\Desktop\Ex_3_C\cmake-build-debug: target-Ex_3_C-Debug-e4a82e2deb9945d1c74f.json: no CMakeLists.txt file at 'C:\Users\׳�׳•׳¨׳•׳� ׳“׳•׳‘׳‘\Desktop\Ex_3_C\CMakeLists.txt'

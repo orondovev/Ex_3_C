@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/Ex_3_C.dir/main.c.o CMakeFiles/Ex_3_C.dir/functions.c.o  -o Ex_3_C 

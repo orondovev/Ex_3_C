@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.c
+stdio.h
+-
+string.h
+-
+functions.h
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.h
+ctype.h
+-
+
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.h
+stdio.h
+-
+string.h
+-
+ctype.h
+-
+
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/main.c
+stdio.h
+-
+string.h
+-
+ctype.h
+-
+functions.h
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.h
+
