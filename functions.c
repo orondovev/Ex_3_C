@@ -7,13 +7,26 @@
 #define FALSE 0
 
 
-//int gValue(char);
+
 int gValue(char c) {
     if (isalpha(c)) {
         int ans = tolower(c);
         return ans - 96;
     }
     return 0;
+}
+
+char is_alpha(char c) {
+    if (isalpha(c)) {
+        if (tolower(c)) {
+            c = (char) (122 - (int) (c) + 97);
+        }
+        else if (toupper(c)) {
+            c = (char) (90 - (int) (c) + 65);
+        }
+        return c;
+    }
+    return c;
 }
 
 
@@ -28,7 +41,7 @@ void Gematria(char word[], char text[]) {
     int j = 0;
     unsigned long str_index = strlen(str), total_string_len = strlen(text) + strlen(str);
     for (int i = 0; i < total_string_len;) {
-        if(!isalpha(text[i])) {
+        if (!isalpha(text[i])) {
             i++;
             continue;
         }
@@ -38,10 +51,10 @@ void Gematria(char word[], char text[]) {
         } else if (g_sum + gValue(text[j]) == letter_g) {
             g_sum += gValue(text[j]);
             if (!first_seq) {
-                str[str_index ++] = '~';
+                str[str_index++] = '~';
             }
             for (int k = i; k <= j; ++k) {
-                str[str_index ++] = text[k];
+                str[str_index++] = text[k];
                 first_seq = FALSE;
             }
             j++;
@@ -54,5 +67,10 @@ void Gematria(char word[], char text[]) {
 }
 
 void Atbash(char letter[], char text[]) {
-
-}
+    int c;
+    for (int i = 0; i < strlen(letter); ++i) {
+        c = is_alpha(letter[i]);
+        c = (char)(c);
+        }
+    printf("%d" , (char)c);
+    }
