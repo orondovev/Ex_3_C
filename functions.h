@@ -6,6 +6,7 @@
 #include <ctype.h>
 void Gematria(char [] , char []);
 void Atbash(char [] , char []);
+void Anagram(char [], char []);
 
 #define TRUE 1
 #define FALSE 0
