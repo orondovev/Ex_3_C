@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C"
+CMAKE_SOURCE_DIR = /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl"
+CMAKE_BINARY_DIR = /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Ex_3_C.dir/depend.make
@@ -59,29 +59,29 @@ include CMakeFiles/Ex_3_C.dir/flags.make
 
 CMakeFiles/Ex_3_C.dir/main.c.o: CMakeFiles/Ex_3_C.dir/flags.make
 CMakeFiles/Ex_3_C.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Ex_3_C.dir/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex_3_C.dir/main.c.o   -c "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/main.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Ex_3_C.dir/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex_3_C.dir/main.c.o   -c /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/main.c
 
 CMakeFiles/Ex_3_C.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Ex_3_C.dir/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/main.c" > CMakeFiles/Ex_3_C.dir/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/main.c > CMakeFiles/Ex_3_C.dir/main.c.i
 
 CMakeFiles/Ex_3_C.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Ex_3_C.dir/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/main.c" -o CMakeFiles/Ex_3_C.dir/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/main.c -o CMakeFiles/Ex_3_C.dir/main.c.s
 
 CMakeFiles/Ex_3_C.dir/functions.c.o: CMakeFiles/Ex_3_C.dir/flags.make
 CMakeFiles/Ex_3_C.dir/functions.c.o: ../functions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Ex_3_C.dir/functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex_3_C.dir/functions.c.o   -c "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/functions.c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Ex_3_C.dir/functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Ex_3_C.dir/functions.c.o   -c /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.c
 
 CMakeFiles/Ex_3_C.dir/functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Ex_3_C.dir/functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/functions.c" > CMakeFiles/Ex_3_C.dir/functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.c > CMakeFiles/Ex_3_C.dir/functions.c.i
 
 CMakeFiles/Ex_3_C.dir/functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Ex_3_C.dir/functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/functions.c" -o CMakeFiles/Ex_3_C.dir/functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.c -o CMakeFiles/Ex_3_C.dir/functions.c.s
 
 # Object files for target Ex_3_C
 Ex_3_C_OBJECTS = \
@@ -95,7 +95,7 @@ Ex_3_C: CMakeFiles/Ex_3_C.dir/main.c.o
 Ex_3_C: CMakeFiles/Ex_3_C.dir/functions.c.o
 Ex_3_C: CMakeFiles/Ex_3_C.dir/build.make
 Ex_3_C: CMakeFiles/Ex_3_C.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Ex_3_C"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable Ex_3_C"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Ex_3_C.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -108,6 +108,6 @@ CMakeFiles/Ex_3_C.dir/clean:
 .PHONY : CMakeFiles/Ex_3_C.dir/clean
 
 CMakeFiles/Ex_3_C.dir/depend:
-	cd "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C" "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C" "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl" "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl" "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/Ex_3_C.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/Ex_3_C.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Ex_3_C.dir/depend
 

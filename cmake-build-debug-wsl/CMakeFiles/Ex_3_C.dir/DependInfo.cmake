@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/functions.c" "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/Ex_3_C.dir/functions.c.o"
-  "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/main.c" "/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/Ex_3_C.dir/main.c.o"
+  "/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.c" "/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/Ex_3_C.dir/functions.c.o"
+  "/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/main.c" "/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/Ex_3_C.dir/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

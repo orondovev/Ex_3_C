@@ -19,33 +19,36 @@ int gValue(char c) {
 
 void Gematria(char letter[], char text[]) {
     char str[7000] = "Gematria Sequences: ";
-    int first_seq = FALSE;
+    int first_seq = TRUE;
     int letter_g = 0;
     for (int i = 0; i < strlen(letter); ++i) {
         letter_g += gValue(letter[i]);
     }
-    for (int i = 0; i < strlen(text); ++i) {
-        int g_sum = 0;
-        for (int j = i; j < strlen(text); ++j) {
+    int g_sum = 0;
+    int j = 0;
+    unsigned long str_index = strlen(str), total_string_len = strlen(text) + strlen(str);
+    for (int i = 0; i < total_string_len;) {
+        if(!isalpha(text[i])) {
+            i++;
+            continue;
+        }
+        if (g_sum + gValue(text[j]) < letter_g || !isalpha(text[j])) {
             g_sum += gValue(text[j]);
-            if (g_sum == letter_g) {
-                char temp[2024];
-                for (int k = i; k <= j; ++k) {
-                    if (first_seq) {
-                        temp[strlen(str)] = '~';
-                        str[strlen(str)] = temp[strlen(str)];
-                        temp[strlen(str)] = text[k];
-                        str[strlen(str)] = temp[strlen(str)];
-                    } else {
-                        temp[strlen(str)] = text[k];
-                        str[strlen(str)] = temp[strlen(str)];
-                    }
-                }
-                first_seq = TRUE;
-            } else if (g_sum > letter_g) {
-                break;
+            j++;
+        } else if (g_sum + gValue(text[j]) == letter_g) {
+            g_sum += gValue(text[j]);
+            if (!first_seq) {
+                str[str_index ++] = '~';
             }
+            for (int k = i; k <= j; ++k) {
+                str[str_index ++] = text[k];
+                first_seq = FALSE;
+            }
+            j++;
+        } else {
+            g_sum -= gValue(text[i]);
+            i++;
         }
     }
-    printf("KOKOKOKO %s\n", str);
+    printf("%s\n", str);
 }

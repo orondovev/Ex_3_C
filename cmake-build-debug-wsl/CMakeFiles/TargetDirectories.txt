@@ -1,3 +1,3 @@
-/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/edit_cache.dir
-/mnt/c/Users/אורון דובב/Documents/github/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/Ex_3_C.dir
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/edit_cache.dir
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/cmake-build-debug-wsl/CMakeFiles/Ex_3_C.dir
