@@ -17,12 +17,12 @@ int gValue(char c) {
 }
 
 
-void Gematria(char letter[], char text[]) {
+void Gematria(char word[], char text[]) {
     char str[7000] = "Gematria Sequences: ";
     int first_seq = TRUE;
     int letter_g = 0;
-    for (int i = 0; i < strlen(letter); ++i) {
-        letter_g += gValue(letter[i]);
+    for (int i = 0; i < strlen(word); ++i) {
+        letter_g += gValue(word[i]);
     }
     int g_sum = 0;
     int j = 0;
@@ -51,4 +51,8 @@ void Gematria(char letter[], char text[]) {
         }
     }
     printf("%s\n", str);
+}
+
+void Atbash(char letter[], char text[]) {
+
 }

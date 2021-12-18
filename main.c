@@ -10,7 +10,7 @@
 #define WORD 32
 
 int main() {//temporary main for check
-    char letter[WORD];
+    char word[WORD];
     char text[TXT];
     char file[TXT + WORD];
     char c;
@@ -31,10 +31,10 @@ int main() {//temporary main for check
 
     int index = 0;
     while (file[index] != ' ' && file[index] != '\n' && file[index] != '\t') {
-        letter[index] = file[index];
+        word[index] = file[index];
         index++;
     }
-    letter[index] = '\0';
+    word[index] = '\0';
 
     index++;
     int text_i = 0;
@@ -42,14 +42,14 @@ int main() {//temporary main for check
         text[text_i++] = file[index++];
     }
     text[text_i] = '\0';
-    Gematria(letter, text);
+    Gematria(word, text);
 
     printf("TEST in --strlen(file)-- ==> %ld\n", strlen(file));
 
 
     printf("FILE ==> %s\n", file);
     printf("String TEXT ==>  %s\n", text);
-    printf("LETTER ==> %s\n", letter);
+    printf("LETTER ==> %s\n", word);
 
 
 }
