@@ -20,9 +20,9 @@ int gValue(char c) {
 void Gematria(char word[], char text[]) {
     char str[7000] = "Gematria Sequences: ";
     int first_seq = TRUE;
-    int letter_g = 0;
+    int word_g = 0;
     for (int i = 0; i < strlen(word); ++i) {
-        letter_g += gValue(word[i]);
+        word_g += gValue(word[i]);
     }
     int g_sum = 0;
     int j = 0;
@@ -32,10 +32,10 @@ void Gematria(char word[], char text[]) {
             i++;
             continue;
         }
-        if (g_sum + gValue(text[j]) < letter_g || !isalpha(text[j])) {
+        if (g_sum + gValue(text[j]) < word_g || !isalpha(text[j])) {
             g_sum += gValue(text[j]);
             j++;
-        } else if (g_sum + gValue(text[j]) == letter_g) {
+        } else if (g_sum + gValue(text[j]) == word_g) {
             g_sum += gValue(text[j]);
             if (!first_seq) {
                 str[str_index ++] = '~';
