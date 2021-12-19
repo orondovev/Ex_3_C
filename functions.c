@@ -66,7 +66,7 @@ int isEqualString(char s1[], char s2[], unsigned long n, int *pos) {
             n++;
             pos++;
         }
-        if(s1[i] != s2[j]) {
+        if (s1[i] != s2[j]) {
             return 0;
         }
 
@@ -74,22 +74,40 @@ int isEqualString(char s1[], char s2[], unsigned long n, int *pos) {
     return 1;
 }
 
-//void Atbash(char *letter, char *text) {
-//    unsigned long len_letter = strlen(letter), len_text = strlen(text);
-//    char str[1025] = "Atbash Sequences : ";
-//    unsigned long str_index = strlen(str);
-//    int pos = len_letter;
-//    if(len_text >= len_letter) {
-//        for (int i = 0; i <= len_text - len_letter; ++i) {
-//            if(isEqualString(letter, text + i, len_letter, &pos + i)) {
-//                for (char *j = text + i; j < text + pos; ++j) {
-//                    str[str_index++] = *j;
-//                }
-//            }
-//        }
-//    }
-//    printf("%s\n", str);
-//}
+void reversed(char word1[], char word2[]) {
+    unsigned long word_len = strlen(word1);
+    for (int i = 0; i < word_len; ++i) {
+        word2[i] = word1[word_len - 1 - i];
+    }
+}
+
+void Atbash(char *word, char *text) {
+    unsigned long len_letter = strlen(word), len_text = strlen(text);
+    char revers[len_letter];
+    reversed(word, revers);
+    char str[1025] = "Atbash Sequences : ";
+    unsigned long str_index = strlen(str);
+    int pos = len_letter;
+    if (len_text >= len_letter) {
+        for (int i = 0; i <= len_text - len_letter; ++i) {
+            int reset = pos;
+            if (isEqualString(word, text + i, len_letter, &pos + i)) {
+                for (char *j = text + i; j < text + pos; ++j) {
+                    str[str_index++] = *j;
+                }
+            } else {
+                pos = reset;
+                if (isEqualString(revers, text + i, len_letter, &pos + i)) {
+                    for (char *j = text + i; j < text + pos; ++j) {
+                        str[str_index++] = *j;
+                    }
+                }
+
+            }
+        }
+    }
+    printf("%s\n", str);
+}
 
 bool contain(char word[], char container[], char c) {
     unsigned long word_len = strlen(word);
@@ -149,8 +167,8 @@ void Anagram(char word[], char text[]) {
             }
             for (int k = i; k < j; ++k) {
                 str[an_index++] = text[k];
-                printf("HEROS %c", str[an_index]);
-                printf("HERE %c ", text[k]);
+//                printf("HEROS %c", str[an_index]);
+//                printf("HERE %c ", text[k]);
             }
             first_seq = FALSE;
             i++;
