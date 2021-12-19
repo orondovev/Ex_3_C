@@ -60,17 +60,18 @@ void Gematria(char word[], char text[]) {
 }
 
 int isEqualString(char s1[], char s2[], unsigned long n) {
-    for (int i = 0, j = 0; j < n; ++i, ++j) {
+    int len = (int) n;
+    for (int i = 0, j = 0; j < len; ++i, ++j) {
         while (s1[i] != s2[j] && s2[i] == ' ') {
             j++;
-            n++;
+            len++;
         }
         if (s1[i] != s2[j]) {
             return 0;
         }
 
     }
-    return (int) n;
+    return len;
 }
 
 void reversed(char word1[], char word2[]) {
@@ -80,30 +81,56 @@ void reversed(char word1[], char word2[]) {
     }
 }
 
+void castAtbash(char word[]) {
+    unsigned long len = strlen(word);
+    for (int i = 0; i < len; ++i) {
+        if(word[i] >= 'a' && word[i] <= 'z') {
+            int temp = word[i] - 97;
+            word[i] = (char)(122 - temp);
+        } else if(word[i] >= 'A' && word[i] <= 'Z') {
+            int temp = word[i] - 65;
+            word[i] = (char)(90 - temp);
+        }
+    }
+}
+
 void Atbash(char *word, char *text) {
-    unsigned long len_letter = strlen(word), len_text = strlen(text);
+    int len_letter = strlen(word), len_text = strlen(text);
     char temp_word[len_letter], temp_text[len_text];
+    bool first_seq = true;
     strcpy(temp_word, word);
+    castAtbash(temp_word);
     strcpy(temp_text, text);
     char revers[len_letter];
     reversed(temp_word, revers);
+
+    printf("REVERSE: %s", revers);
+
     char str[1025] = "Atbash Sequences : ";
     unsigned long str_index = strlen(str);
-    int pos = len_letter;
     if (len_text >= len_letter) {
         for (int i = 0; i <= len_text - len_letter; i++) {
-            if (isEqualString(temp_word, temp_text + i, len_text)) {
-                for (int j = i; j < isEqualString(temp_word, temp_text + i, len_text); ++j) {
+            if (isEqualString(temp_word, temp_text + i, len_letter)) {
+                if(!first_seq) {
+                    str[str_index++] = '~';
+                }
+                for (int j = i; j < i + isEqualString(temp_word, temp_text + i, len_letter); ++j) {
                     str[str_index++] = temp_text[j];
                 }
-            } else if (isEqualString(revers, temp_text + i, len_text)) {
-                for (int j = i; j < isEqualString(temp_word, temp_text + i, len_text); ++j) {
+                first_seq = false;
+            } else if (isEqualString(revers, temp_text + i, len_letter)) {
+                if(!first_seq) {
+                    str[str_index++] = '~';
+                }
+                for (int j = i; j < i + isEqualString(revers, temp_text + i, len_letter); ++j) {
                     str[str_index++] = temp_text[j];
                 }
+                first_seq = false;
             }
         }
-        printf("%s\n", str);
     }
+    printf("%s\n", str);
+}
 
     bool contain(char word[], char container[], char c) {
         unsigned long word_len = strlen(word);
