@@ -59,9 +59,37 @@ void Gematria(char word[], char text[]) {
     printf("%s\n", str);
 }
 
-void Atbash(char letter[], char text[]) {
+int isEqualString(char s1[], char s2[], unsigned long n, int *pos) {
+    for (int i = 0, j = 0; j < n; ++i, ++j) {
+        while (s1[i] != s2[j] && s2[i] == ' ') {
+            j++;
+            n++;
+            pos++;
+        }
+        if(s1[i] != s2[j]) {
+            return 0;
+        }
 
+    }
+    return 1;
 }
+
+//void Atbash(char *letter, char *text) {
+//    unsigned long len_letter = strlen(letter), len_text = strlen(text);
+//    char str[1025] = "Atbash Sequences : ";
+//    unsigned long str_index = strlen(str);
+//    int pos = len_letter;
+//    if(len_text >= len_letter) {
+//        for (int i = 0; i <= len_text - len_letter; ++i) {
+//            if(isEqualString(letter, text + i, len_letter, &pos + i)) {
+//                for (char *j = text + i; j < text + pos; ++j) {
+//                    str[str_index++] = *j;
+//                }
+//            }
+//        }
+//    }
+//    printf("%s\n", str);
+//}
 
 bool contain(char word[], char container[], char c) {
     unsigned long word_len = strlen(word);
@@ -86,7 +114,7 @@ bool contain(char word[], char container[], char c) {
 }
 
 void Anagram(char word[], char text[]) {
-    char str[7000] = "Anagram Sequences: ";
+    char str[1024] = "Anagram Sequences: ";
     int first_seq = TRUE;
     int j = 0;
     unsigned long an_index = strlen(str);
@@ -121,10 +149,11 @@ void Anagram(char word[], char text[]) {
             }
             for (int k = i; k < j; ++k) {
                 str[an_index++] = text[k];
+                printf("HEROS %c", str[an_index]);
+                printf("HERE %c ", text[k]);
             }
             first_seq = FALSE;
             i++;
-//            con_index++;
             *container = container[i];
             num_of_chars -= 1;
         }
