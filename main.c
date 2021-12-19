@@ -43,7 +43,7 @@ int main() {//temporary main for check
     }
     text[text_i] = '\0';
     Gematria(word, text);
-    Atbash(word, text);
+//    Atbash(word, text);
     Anagram(word, text);
 
     printf("TEST in --strlen(file)-- ==> %ld\n", strlen(file));

@@ -33,7 +33,7 @@ void Gematria(char word[], char text[]) {
     int g_sum = 0;
     int j = 0;
     unsigned long str_index = strlen(str), total_string_len = strlen(text);
-    for (int i = 0; i < total_string_len;) {
+    for (int i = 0; j < total_string_len;) {
         if (!isalpha(text[i])) {
             i++;
             continue;
