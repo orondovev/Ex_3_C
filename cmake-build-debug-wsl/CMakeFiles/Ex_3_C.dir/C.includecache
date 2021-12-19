@@ -6,23 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.c
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.h
 stdio.h
 -
 string.h
+-
+ctype.h
+-
+
+/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/main.c
+stdio.h
+-
+string.h
+-
+ctype.h
 -
 functions.h
 /mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.h
-ctype.h
--
-stdbool.h
--
-
-/mnt/c/Users/barak/Documents/GitHub/SystemProg_C/Ex_3_C/functions.h
-stdio.h
--
-string.h
--
-ctype.h
--
 

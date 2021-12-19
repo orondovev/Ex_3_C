@@ -61,7 +61,10 @@ void Gematria(char word[], char text[]) {
 
 int isEqualString(char s1[], char s2[], unsigned long n) {
     int len = (int) n;
-    for (int i = 0, j = 0; j < len; ++i, ++j) {
+//    if(s2[0] == ' ') {
+//        return 0;
+//    }
+    for (int i = 1, j = 1; j < len; ++i, ++j) {
         while (s1[i] != s2[j] && s2[i] == ' ') {
             j++;
             len++;
@@ -94,17 +97,19 @@ void castAtbash(char word[]) {
     }
 }
 
-void Atbash(char *word, char *text) {
+void Atbash(char word[], char text[]) {
     int len_letter = strlen(word), len_text = strlen(text);
-    char temp_word[len_letter], temp_text[len_text];
+    char temp_word[len_letter + 1], temp_text[len_text + 1];
     bool first_seq = true;
     strcpy(temp_word, word);
+    temp_text[len_text] = temp_word[len_letter] = '\0';
     castAtbash(temp_word);
     strcpy(temp_text, text);
-    char revers[len_letter];
+    char revers[len_letter+1];
     reversed(temp_word, revers);
+    revers[len_letter] = '\0';
 
-    printf("REVERSE: %s", revers);
+    printf("REVERSE: %s\n", revers);
 
     char str[1025] = "Atbash Sequences : ";
     unsigned long str_index = strlen(str);
@@ -155,7 +160,7 @@ void Atbash(char *word, char *text) {
     }
 
     void Anagram(char word[], char text[]) {
-        char str[1024] = "Anagram Sequences: ";
+        char str[1025] = "Anagram Sequences: ";
         int first_seq = TRUE;
         int j = 0;
         unsigned long an_index = strlen(str);
