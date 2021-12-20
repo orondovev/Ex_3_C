@@ -15,20 +15,20 @@ int main() {//temporary main for check
     char file[TXT + WORD];
     char c;
 
-    scanf("%c", &c);
-    int i = 0;
-    while (i < TXT + WORD - 1) {
-        if (c == '~') {
-            file[i] = c;
-            i++;
-            break;
-        }
-        file[i] = c;
-        scanf("%c", &c);
-        i++;
-    }
-    file[i] = '\0';
-
+    scanf("%[^'~']s", file);
+//    int i = 0;
+//    while (i < TXT + WORD - 1) {
+//        if (c == '~') {
+//            file[i] = c;
+//            i++;
+//            break;
+//        }
+//        file[i] = c;
+//        scanf("%c", &c);
+//        i++;
+//    }
+    file[strlen(file)] = '~';
+    printf("FILE ==> %s\n", file);
     int index = 0;
     while (file[index] != ' ' && file[index] != '\n' && file[index] != '\t') {
         word[index] = file[index];
@@ -53,7 +53,7 @@ int main() {//temporary main for check
 //    printf("TEST in --strlen(file)-- ==> %ld\n", strlen(file));
 //
 //
-//    printf("FILE ==> %s\n", file);
+
 //    printf("String TEXT ==>  %s\n", text);
 //    printf("LETTER ==> %s\n", word);
 
