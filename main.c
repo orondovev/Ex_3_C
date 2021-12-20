@@ -6,7 +6,7 @@
 #define TRUE 1
 #define FALSE 0
 
-#define TXT 1024
+#define TXT 1025
 #define WORD 32
 
 int main() {//temporary main for check
@@ -42,16 +42,20 @@ int main() {//temporary main for check
         text[text_i++] = file[index++];
     }
     text[text_i] = '\0';
-    Gematria(word, text);
-//    Atbash(word, text);
-    Anagram(word, text);
+    char str[1025];
+    str[0] = '\0';
+    Gematria(word, text, str);
+    str[0] = '\0';
+    Atbash(word, text, str);
+    str[0] = '\0';
+    Anagram(word, text, str);
 
-    printf("TEST in --strlen(file)-- ==> %ld\n", strlen(file));
-
-
-    printf("FILE ==> %s\n", file);
-    printf("String TEXT ==>  %s\n", text);
-    printf("LETTER ==> %s\n", word);
+//    printf("TEST in --strlen(file)-- ==> %ld\n", strlen(file));
+//
+//
+//    printf("FILE ==> %s\n", file);
+//    printf("String TEXT ==>  %s\n", text);
+//    printf("LETTER ==> %s\n", word);
 
 
 }
